@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prince Kumar | Computer Engineering Student</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    header {
+      background: linear-gradient(135deg, #2563eb, #1e40af);
+      padding: 70px 20px;
+      text-align: center;
+      animation: fadeDown 1.2s ease-out;
+    }
+
+    .profile-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      padding: 6px;
+      background: linear-gradient(135deg, #60a5fa, #2563eb);
+      animation: pulse 2.5s infinite;
+    }
+
+    .profile-pic img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      background: #0f172a;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(96,165,250,0.6); }
+      70% { box-shadow: 0 0 0 18px rgba(96,165,250,0); }
+      100% { box-shadow: 0 0 0 0 rgba(96,165,250,0); }
+    }
+    header h1 { font-size: 3rem; font-weight: 700; }
+    header p { font-size: 1.2rem; margin-top: 10px; opacity: 0.9; }
+
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: #111827;
+      border-radius: 16px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.6s ease;
+    }
+
+    .card.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .card:hover {
+      transform: translateY(-6px) scale(1.01);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.45);
+    }
+
+    h2 {
+      color: #60a5fa;
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+    }
+
+    ul { list-style: none; }
+    ul li::before {
+      content: "•";
+      color: #60a5fa;
+      margin-right: 8px;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #1e293b;
+      padding: 10px 16px;
+      border-radius: 999px;
+      margin: 8px 8px 0 0;
+      font-size: 0.9rem;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .skills span:hover {
+      transform: scale(1.1);
+      background: #2563eb;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #9ca3af;
+      font-size: 0.9rem;
+    }
+
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="profile-wrap">
+      <div class="profile-pic">
+        <!-- Replace profile.jpg with your photo file -->
+        <img src="profile.jpg" alt="Prince Kumar" />
+      </div>
+      <h1>Prince Kumar</h1>
+      <p>Diploma Student | Computer Engineering | Technology Enthusiast</p>
+    </div>
+  </header>
+
+  <section>
+    <div class="card">
+      <h2>About Me</h2>
+      <p>
+        I am a motivated Diploma student in Computer Engineering (2nd Year) at Guru Nanak Dev Institute of Technology.
+        I have a strong interest in programming and technology and believe in continuous learning and self-improvement.
+        Alongside academics, I actively engage in social work to understand real-world challenges and contribute positively to society.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Education</h2>
+      <p><strong>Diploma in Computer Engineering</strong></p>
+      <p>Guru Nanak Dev Institute of Technology</p>
+      <p>2nd Year – Ongoing</p>
+    </div>
+
+    <div class="card">
+      <h2>Skills</h2>
+      <div class="skills">
+        <span>C Programming</span>
+        <span>HTML</span>
+        <span>Java (Core)</span>
+        <span>Problem Solving</span>
+        <span>Logic Building</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Experience & Social Work</h2>
+      <p><strong>Prayan Foundation</strong></p>
+      <p>
+        Actively involved in social initiatives and community activities.
+        This experience has helped me develop teamwork, responsibility,
+        and a sense of civic awareness.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Interests</h2>
+      <ul>
+        <li>Technology and Programming</li>
+        <li>Computer Engineering Applications</li>
+        <li>Using Technology for Social Impact</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Career Objective</h2>
+      <p>
+        My goal is to be successful in life by building strong technical skills,
+        gaining real-world experience, and continuously improving as a professional.
+        I aim to work in the technology sector where I can grow with responsibility
+        and contribute positively to society through my knowledge and efforts.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Prince Kumar | Sagarpur, Delhi
+  </footer>
+
+  <script>
+    const cards = document.querySelectorAll('.card');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    cards.forEach(card => observer.observe(card));
+  </script>
+
+</body>
+</html>
